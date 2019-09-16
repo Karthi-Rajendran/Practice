@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Test 8 tables</title>
+
+    <style>
+    table,th,td{
+        border:1px solid red;
+        border-collapse: collapse;
+        text-align: center
+        
+    }
+    .mytable-head{
+        background-color: rgb(150, 194,214);
+    }
+    tr:nth-child(even){
+        background-color: aquamarine;
+    }
+       
+    tr:nth-child(odd){
+        background-color:lemonchiffon;
+    }
+
+    
+    
+    </style>
+    </head>
+    <body>
+        <table>
+            <caption>Student Information</caption>
+            <thead class="mytable-head">
+                <th>Sid</th><th>Sname</th><th>Email</th><th>Phone</th><th>City</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>101</td><td>Aplha</td><td>alpha@jlc</td><td>96586548758</td><td>Bangalore</td>
+                </tr>
+                <tr>
+                        <td>102</td><td>Bravo</td><td>bravo@jlc</td><td>458785</td><td>Chennai</td>
+                 </tr>
+                <tr>
+                        <td>103</td><td>Charlie</td><td>charlie@jlc</td><td>5589657</td><td>Delhi</td>
+                </tr>
+                <tr>
+                    <td>104</td><td>Delta</td><td>delta@jlc</td><td>35569854</td><td>Hyderabad</td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+</html>

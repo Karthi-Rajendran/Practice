@@ -1,0 +1,17 @@
+a{
+    color:red;
+    font-size:25px;
+    font-family: Cambria;
+}
+
+a:hover{
+    color:black;
+    font-size: 50px;
+}
+
+a:visited{
+    color:blue;
+}
+a:active{
+    color:aqua;
+}
