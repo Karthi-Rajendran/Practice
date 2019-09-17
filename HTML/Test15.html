@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <style type="text/css">body{
+            background-color: mistyrose;
+        }
+        
+        .regFormTable{
+            text-align: left;
+            font-family: Verdana;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        
+        input,select{
+            color: red;
+            font-family: Verdana;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 5px 5px;
+            margin: 8px 0;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+</style>        
+    </head>
+
+    <body>
+        <div align="center" style="background-color: lightgray;">
+        <form id="regForm" action="hello.jsp" enctype="text/plain" method="GET" autocomplete="on" target="_blank" novalidate>
+            <table class="regFormTable">
+                <caption><h3>HTML 5 new Form Elements</h3></caption>
+                <tr>
+                    <td><label for="website">Website</label></td>
+                    <td><input type="url" id="website" name="website" required/></td>
+                </tr>
+                <tr>
+                    <td colspan="2" align="center">
+                        <input type="submit" value="Submit Now" formaction="hello.jsp" formenctype="text/plain" formmethod="GET" formtarget="_blank" formnovalidate/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <table class="regFormTable">
+            <tr>
+                <td><label for="fullname">Full Name</label></td>
+                <td><input type="text" id="fullname" name="fullname" required form="regForm"/></td>
+            </tr>
+        </table>
+        </div>
+    </body>
+</html>

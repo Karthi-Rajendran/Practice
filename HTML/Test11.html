@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Registration Form</title>
+        <link rel="stylesheet" href="CSS/formstyle.css">
+    </head>
+
+    <body>
+        <div align="center" style="background-color: lightgray"></div>
+        <form action="register.jsp" method="POST" enctype="multipart/form-data">
+        <table class="regFormTable">
+            <caption><h2>Registration Form</h2></caption>
+            <tr>
+                <td><label for="fname">Full Name</label></td>
+                <td><input type="text" id="fname" name="fname"/></td>
+            </tr>
+            <tr>
+                <td><label for="email">Email ID</label></td>
+                <td><input type="text" id="email" name="email"/></td>
+            </tr>
+            <tr>
+                <td><label for="pword">Password</label></td>
+                <td><input type="text" id="pword" name="pword"/></td>
+            </tr>
+            <tr>
+                <td><label for="courses">Courses</label></td>
+                <td>
+                    <input type="radio" id="courses" name="courses" value="Java"/>Java
+                    <input type="radio" id="courses" name="courses" value="Python"/>Python
+                    <input type="radio" id="courses" name="courses" value="Angular"/>Angular
+                    <input type="radio" id="courses" name="courses" value="MongoDB"/>MongoDB
+                    <input type="radio" id="courses" name="courses" value="J2EE"/>J2EE
+                </td>
+            </tr>
+            <tr>
+                <td><label for="courses">Courses</label></td>
+                <td>
+                    <input type="checkbox" id="courses" name="courses" value="Java"/>Java
+                    <input type="checkbox" id="courses" name="courses" value="Python"/>Python
+                    <input type="checkbox" id="courses" name="courses" value="Angular"/>Angular
+                    <input type="checkbox" id="courses" name="courses" value="MongoDB"/>MongoDB
+                    <input type="checkbox" id="courses" name="courses" value="J2EE"/>J2EE
+                </td>
+            </tr>
+            <tr>
+                <td><label for="courses">Courses</label></td>
+               <td>
+                   <select id="courses" name="courses">
+                       <option value="">---------------Select-------------</option>
+                       <option value="Java">Java</option>
+                       <option value="Python">Python</option>
+                       <option value="Angular">Angular</option>
+                       <option value="MongoDB">MongoDB</option>
+                       <option value="J2EE">J2EE</option>
+                   </select>
+               </td>
+            </tr>
+            <tr>
+                <td><label for="photo">Upload Photo</label></td>
+                <td><input type="file" id="photo" name="photo"/></td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="button" value="I am Button"/>
+                    <input type="submit" value="Register Now"/>
+                    <input type="hidden" id="sid" name="sid" value="B26-101"/>
+                    <input type="reset" value="Clear Form"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</div>
+    </body>
+</html>
