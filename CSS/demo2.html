@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>CSS:Pseudo Class Selectors</title>
+        <style>
+        p:first-child{
+            color: red;
+        }
+        p:last-child{
+            color:green;
+        }
+        p:nth-child(3){
+            color:lightskyblue
+        }
+        P::first-letter{
+            font-size: 2em;
+        }
+        
+        .my-class::first-line{
+          color:blue;
+          font-size: 25px;
+          font-weight: bold;
+
+        }
+        
+        #my-id::first-line{
+            color: goldenrod;
+            font-size: 25px;
+            font-weight: bold;
+        }
+        input:focus{
+            background-color: rgb(189, 216, 224);
+            border-color: red;
+        }
+        </style>
+    </head>
+    <body>
+        Full Name:<input type="text" name="fname" autofocus/><br/>
+        Email ID:<input type="text" name="email"/><br/>
+        Phone:<input type="number" name="phone"/><br/>
+        <div>
+            <p>Java Training is one fofs sdfsdf sdfsdfsdfsdfsdfsdfsdfsd
+                sdfsdfsdfsdfsdfsdfsdfsdsdfsdf sdfsdfsfsdfsdfsdf 
+            </p>
+            <p>Java Training</p>
+            <p>Java Training</p>
+            <p>Java Training</p>
+            <p>Java Training</p>
+        </div>
+        <div class="my-class" id="my-id">
+            Any one who has passion about teachong and having in-depth ass sdsd
+            sfsdfsdfsdfsdf
+            sdfsdfsdfsdfsdfsdfsdfsd sdfsdhfsdjf sfjisdfjsdifsd sdkjfsdifj sdfsdfsdfsdfsdfsdfsdfsdsdfsdfbhs
+            fsdfhksdfsdkf sdfksdklfsdf sdfjisdfpsd;pfsdfposd fssdifsdlofdf
+        </div>
+    </body>
+</html>
