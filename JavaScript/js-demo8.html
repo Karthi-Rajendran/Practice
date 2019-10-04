@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS:Template</title>
+     <style>
+        div{
+             margin: 50px;
+             border:2px solid red;
+             border-radius: 10px;
+             height: 500px;
+             width: 500px;
+             font-size: 25px;
+             background-color: goldenrod;
+            padding-left: 20px;
+            }
+
+    </style>
+    </head>
+    <body>
+       <div id="my-data-div"></div>
+       <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+            }
+
+            print("<u> 3) Relational Operators</u>:");
+
+            var a=10;
+            
+            print("a=>"+a);
+
+            print("a>5 =>"+(a>5));
+            
+            print("a>10 =>"+(a>10));
+            
+            print("a>=10 =>"+(a>=10));
+
+            print("a<20 =>"+(a<20));
+        
+            print("a<10 =>"+(a<10));
+            
+            print("a<=10 =>"+(a<=10));
+            //print("</br>");
+
+            print("a==10 =>"+(a==10));
+            print("a=='10' =>"+(a=='10'));
+            print("a==10.0 =>"+(a==10.0));
+
+            print("a!=10 =>"+(a!=10));
+            print("a!='10' =>"+(a!='10'));
+            print("a!=10.0 =>"+(a!=10.0));
+
+            print("a===10 =>"+(a===10));
+            print("a==='10' =>"+(a==="10"));
+            print("a===10.0 =>"+(a===10.0));
+
+            print("a!==10 =>"+(a!==10));
+            print("a!=='10' =>"+(a!=="10"));
+            print("a!==10.0 =>"+(a!==10.0));
+
+       </script>
+
+    </body>
+</html>

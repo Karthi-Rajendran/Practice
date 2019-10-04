@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS:Template</title>
+     <style>
+        div{
+             margin: 50px;
+             border:2px solid red;
+             border-radius: 10px;
+             height: 500px;
+             width: 500px;
+             font-size: 25px;
+             background-color: goldenrod;
+            padding-left: 20px;
+            }
+
+    </style>
+    </head>
+    <body>
+       <div id="my-data-div"></div>
+       <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+            }
+
+            print("<u> 7) Bitwise Operators</u>:");
+
+            var a=19;
+
+            print("a<<1 : "+(a<<1));
+            print("a<<2 : "+(a<<2));
+            print("a>>1 : "+(a>>1));
+            print("a>>2 : "+(a>>2));
+
+            var x=15;
+            var y=17;
+
+            print("x & y : "+(x&y));
+            print("x | y : "+(x|y));
+            print("x^y : "+(x^y));
+            print("~x : "+(~x));
+            print("~y : "+(~y));
+
+            print("0101<<1 : "+(0101<<1));
+            print("0101>>1 : "+(0101>>1));
+            print("0101>>2 : "+(101>>2));
+       </script>
+
+    </body>
+</html>

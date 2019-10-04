@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS:Template</title>
+     <style>
+        div{
+             margin: 50px;
+             border:2px solid red;
+             border-radius: 10px;
+             height: 500px;
+             width: 500px;
+             font-size: 25px;
+             background-color: goldenrod;
+            padding-left: 20px;
+            }
+
+    </style>
+    </head>
+    <body>
+       <div id="my-data-div"></div>
+       <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+            }
+
+            print("<u> 11)in operator 12)delete operator</u>:");
+
+            var mystr=new String("Hello Guys");
+            print(mystr);
+            print(typeof mystr);
+
+            for(x in mystr){
+                print(x+" - "+mystr[x]);
+            }
+
+            print(0 in mystr);
+            print(1 in mystr);
+            print(2 in mystr);
+            print(9 in mystr);
+            print(10 in mystr);
+            print(11 in mystr);
+            print(length in mystr);
+
+            arr=new Array(3);
+            arr[0]=10;
+            arr[1]=99.99;
+            arr[2]="Srinivas Dande";
+            arr[3]=true;
+            print(arr);
+            print(typeof arr);
+
+            for(x in arr){
+                print(x+" - "+arr[x]);
+            }
+
+            print(0 in arr);
+            print(1 in arr);
+            print(2 in arr);
+            print(4 in arr);
+            print(5 in arr);
+            print(length in arr);
+
+            print(arr[2]);
+            delete arr[2];
+            print(arr[2]);
+
+            print(arr[1]);
+            delete arr[1];
+            print(arr[1]);
+
+            for(x in arr){
+                print(x+" - "+arr[x]);
+            }
+
+            print("-------------");
+
+            print(arr);
+            delete arr;
+            //print(arr);
+
+            print(mystr);
+            delete mystr;
+            print(mystr);
+
+            x="hello";
+            print(x);
+            delete x;
+            //print(x);
+            print("done");
+
+
+
+       </script>
+
+    </body>
+</html>

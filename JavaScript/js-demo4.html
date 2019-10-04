@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS:Template</title>
+     <style>
+        div{
+             margin: 50px;
+             border:2px solid red;
+             border-radius: 10px;
+             height: 500px;
+             width: 500px;
+             font-size: 25px;
+             background-color: goldenrod;
+            padding-left: 20px;
+            }
+
+    </style>
+    </head>
+    <body>
+       <div id="my-data-div"></div>
+       <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+            }
+
+            print("<u> 1. Variables and its Scopes</u>:");
+
+               var x=10;
+               print(x);
+
+            function show(){
+                var y=20;
+                print("inside -show(): x is "+x);
+                print("inside-show():y is "+y);
+                print("</br>");
+                if(true){
+                    var z=30;
+                    print("inside -if block: x is "+x);
+                    print("inside -if block: y is "+y);
+                    print("inside -if block: z is "+z);
+                    print("</br>");
+                }
+                print("outside -if block: x is "+x);
+                print("outside if block: y is "+y);
+                print("outside -if block: z is "+z);
+                print("</br>");
+            }
+            show();
+            print("outside -show(): x is "+x);
+            print("outside -show(): y is "+y);
+            print("outside -show(): z is "+z);
+            print("Done!");
+       </script>
+
+    </body>
+</html>

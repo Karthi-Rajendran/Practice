@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS:Template</title>
+     <style>
+        div{
+             margin: 50px;
+             border:2px solid red;
+             border-radius: 10px;
+             height: 500px;
+             width: 500px;
+             font-size: 25px;
+             background-color: goldenrod;
+            padding-left: 20px;
+            }
+
+    </style>
+    </head>
+    <body>
+       <div id="my-data-div"></div>
+       <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+            }
+
+            print("<u>Arrays</u>:");
+
+            var arr=[10,20,30];
+            print(arr);
+            print(typeof arr);
+
+            for(var i=0;i<arr.length;i++){
+               print(arr[i]);
+            }
+            print("---------");
+
+            var arr=["java","javascript","Angular"];
+            print(arr);
+            print(typeof arr);
+
+            for(i in arr){
+               print(arr[i]);
+            }
+
+            print("-----------");
+            var arr=new Array(10,20,30);
+            for(i in arr){
+               print(arr[i]);
+            }
+
+            print("----------");
+            var arr=new Array("java","javascript","Angular");
+            for(var i=0;i<arr.length;i++){
+               print(arr[i]);
+            }
+            
+            print("----------");
+            var arr=new Array[5];
+            arr[0]=10;
+            arr[2]=99.9;
+            arr[4]="Hello Guys";
+           // arr[5]=true;
+           // arr[10]="OK";
+            for(i in arr){
+               print(arr[i]);
+            }
+
+            print("---------");
+            for(var i=0;i<arr.length;i++){
+                  print(arr[i]);
+            }
+            print("Done");
+
+       </script>
+
+    </body>
+</html>

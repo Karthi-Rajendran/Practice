@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS:Template</title>
+     <style>
+        div{
+             margin: 50px;
+             border:2px solid red;
+             border-radius: 10px;
+             height: 500px;
+             width: 500px;
+             font-size: 25px;
+             background-color: goldenrod;
+            padding-left: 20px;
+            }
+
+    </style>
+    </head>
+    <body>
+       <div id="my-data-div"></div>
+       <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+            }
+
+            print("<u> 8)typeof, 9)new, 10)instanceof Operators</u>:");
+
+            var a=19;
+            print(a);
+            print(typeof a);
+
+            a=9.9;
+            print(a);
+            print(typeof a);
+
+            a="Hello Guys";
+            print(a);
+            print(typeof a);
+
+            var mystr=new String("Hello Guys");
+            print(mystr);
+            print(typeof mystr);
+
+            var arr=new Array(3);
+            arr[0]=10;
+            arr[1]=20;
+            arr[2]=30;
+            print(arr);
+            print(typeof arr);
+
+            var dob=new Date();
+            print(dob.getDate()+"-"+dob.getMonth()+"-"+dob.getFullYear());
+            print(typeof dob);
+
+
+            print(dob instanceof Date);
+            print(dob instanceof Array);
+            print(dob instanceof String);
+
+            print(arr instanceof Date);
+            print(arr instanceof Array);
+            print(arr instanceof String);
+
+            print(mystr instanceof Date);
+            print(mystr instanceof Array);
+            print(mystr instanceof String);
+            
+       </script>
+
+    </body>
+</html>

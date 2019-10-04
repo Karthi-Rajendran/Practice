@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS:Changing DOM</title>
+     <style>
+        input,h1,div{
+             margin: 50px;
+             border:2px solid red;
+             border-radius: 10px;
+             height: 50px;
+             width: 500px;
+             font-size: 25px;
+             background-color: goldenrod;
+             text-align: center;
+            }
+
+        input{
+            width: 250px;
+            background-color:red;
+        }
+         
+     </style>
+    </head>
+    <body>
+        <h1 id="hello"> Hello Guys</h1>
+        <div id="hai"> Hai Guys</div>
+        <input type="button" value="Change Text Now" onclick="changeText();"/>
+
+        <script>
+            function changeText(){
+                var helloH1=document.getElementById("hello");
+                helloH1.innerHTML="Welcome to CourseCube!"
+                
+                var haiDiv=document.getElementById("hai");
+                haiDiv.innerHTML+=" Welcome to JLC!"
+            }
+            //changeText();
+            </script>
+
+    </body>
+</html>

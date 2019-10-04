@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS:Template</title>
+     <style>
+        div{
+             margin: 50px;
+             border:2px solid red;
+             border-radius: 10px;
+             height: 500px;
+             width: 500px;
+             font-size: 25px;
+             background-color: goldenrod;
+            padding-left: 20px;
+            }
+
+    </style>
+    </head>
+    <body>
+       <div id="my-data-div"></div>
+       <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>"
+            }
+
+            print("<u> 5) Increment and Decrement Operators</u>:");
+
+            var a=10;
+
+            print(a++);
+            print(a);
+
+            var b=10;
+            print(++b);
+            print(b);
+
+         //    print(10++);
+            print("done");
+
+            var a=5;
+            print(a);
+            print(++a);
+            print(++a);
+
+            print(a--);
+            print(a++);
+            print(--a);
+            print(a);            
+       </script>
+
+    </body>
+</html>
