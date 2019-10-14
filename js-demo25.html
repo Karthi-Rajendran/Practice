@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS: Creating HTML elements with JS</title>
+      <style>
+          div{
+              margin:50px;
+              border:2px solid red;
+              border-radius: 10px;
+              width: 500px;
+              font-size: 25px;
+              background-color: goldenrod;
+              padding-left: 20px;
+            }
+            #mytable{
+                margin: 50px;
+                border: 2px solid red;
+                border-radius: 10px;
+                width: 30%;
+                padding: 20px;
+                line-height: 1.5;
+            }
+      </style>
+    </head>
+    <body>
+        <div id="my-data-div"></div>
+        <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>";
+            }
+            print("<u>Exploring Functions-3</u>");
+            
+            function show1(){
+                var a=10;
+                print(a);
+            }
+
+            show1();
+            print("------------");
+
+            var x=99;
+            function show2(){
+                print(x);
+            }
+
+            show2();
+            print("--------------");
+
+            var p=10;
+            print(p);
+
+            function show3(){
+                var p=20;
+                function inner(){
+                    var p=30;
+                    print(p);
+                }
+                print(p);
+                inner();
+                print(p);
+            }
+
+            show3();
+            print(p);
+
+            print("--------------");
+
+
+            print("Done");
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS: Creating HTML elements with JS</title>
+      <style>
+          div{
+              margin:50px;
+              border:2px solid red;
+              border-radius: 10px;
+              width: 500px;
+              font-size: 25px;
+              background-color: goldenrod;
+              padding-left: 20px;
+            }
+            #mytable{
+                margin: 50px;
+                border: 2px solid red;
+                border-radius: 10px;
+                width: 30%;
+                padding: 20px;
+                line-height: 1.5;
+            }
+      </style>
+    </head>
+    <body>
+        <div id="my-data-div"></div>
+        <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>";
+            }
+            print("<u>Exploring Functions-1</u>");
+            
+            function show(){
+                var x=10;
+                print(x);
+                print("Hello Guys");
+                console.log("I am Show()");
+                //return "undefined";
+            }
+            show();
+            var res=show();
+            print(res);
+            print("------------");
+
+            function sum(a,b){
+                var s=a+b;
+                return s;
+            }
+
+            var res=sum(10,20);
+            print(res);
+            print("--------------");
+
+            var arr=[10,20,30,40,50];
+
+            function showArray(arr1){
+                print(arr1);
+                arr1[2]=99;
+                print(arr1);
+            }
+            showArray(arr);
+            print(arr);
+            print("------------");
+            var d=101;
+            function show1(a){
+                print(a);
+                a=909;
+                print(a);
+            }
+            show1(d);
+            print(d);
+            print("------------");
+
+            function sumArray(arr1){
+                var sum=0;
+                for(i in arr1){
+                    sum+=arr1[i];
+                }
+                return sum;
+            }
+
+            var res=sumArray(arr);
+            print(res);
+            print("------------");
+            print("Done");
+        </script>
+    </body>
+
+</html>
