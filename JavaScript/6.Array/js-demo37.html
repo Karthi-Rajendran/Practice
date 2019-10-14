@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS: Creating HTML elements with JS</title>
+      <style>
+          div{
+              margin:50px;
+              border:2px solid red;
+              border-radius: 10px;
+              width: 500px;
+              font-size: 25px;
+              background-color: goldenrod;
+              padding-left: 20px;
+            }
+            #mytable{
+                margin: 50px;
+                border: 2px solid red;
+                border-radius: 10px;
+                width: 30%;
+                padding: 20px;
+                line-height: 1.5;
+            }
+      </style>
+    </head>
+    <body>
+        <div id="my-data-div"></div>
+        <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>";
+            }
+            print("<u>Exploring - Array Object - 1</u>");
+           
+           var arr=[10,59,20,35,30,25,40,50];
+           print(arr);
+           print("Arr length:"+arr.length);
+           print("--------------");
+
+           var first=arr[0];
+           var last=arr[arr.length-1];
+           print("First:"+first);
+           print("Last:"+last);
+           print("--------------");
+
+           print(arr);
+           var x=arr.push("Hello");
+           print("x:"+x);
+           print("Arr:"+arr);
+           var x=arr.push("99","Hai Guys");
+           print("x:"+x);
+           print("Arr:"+arr);
+           print("------------");
+           var x=arr.pop();
+           print("x:"+x);
+           print("Arr:"+arr);
+           var x=arr.pop();
+           print("x:"+x);
+           print("Arr:"+arr);
+           print("-----------");
+
+           arr.reverse();
+           print("Arr rev:"+arr);
+           print("-----------");
+           arr.sort();
+           print("Arr sort:"+arr);
+           print("-----------");
+           var x=arr.shift();
+           print("x:"+x);
+           print("Arr:"+arr);
+           var x=arr.shift();
+           print("x:"+x);
+           print("Arr:"+arr);
+           print("-----------");
+           var y=arr.unshift(99);
+           print(y);
+           print(arr);
+           var y=arr.unshift(123);
+           print(y);
+           print(arr);
+           print("------------");
+           print("Done");
+        </script>
+    </body>
+
+</html>

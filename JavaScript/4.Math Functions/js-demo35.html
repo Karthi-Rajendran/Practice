@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS: Creating HTML elements with JS</title>
+      <style>
+          div{
+              margin:50px;
+              border:2px solid red;
+              border-radius: 10px;
+              width: 500px;
+              font-size: 25px;
+              background-color: goldenrod;
+              padding-left: 20px;
+            }
+            #mytable{
+                margin: 50px;
+                border: 2px solid red;
+                border-radius: 10px;
+                width: 30%;
+                padding: 20px;
+                line-height: 1.5;
+            }
+      </style>
+    </head>
+    <body>
+        <div id="my-data-div"></div>
+        <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>";
+            }
+            print("<u>Exploring - Math Object</u>");
+            
+           print("Sqrt:"+Math.sqrt(25));
+           print("Cbrt:"+Math.cbrt(27));
+           print("Pow:"+Math.pow(5,2));
+           print("-------------");
+           print("ceil:"+Math.ceil(1.234));
+           print("ceil:"+Math.ceil(1.567));
+           print("Floor:"+Math.floor(1.234));
+           print("Floor:"+Math.floor(1.567));
+           print("Round:"+Math.round(1.234));
+           print("Round:"+Math.round(1.567));
+           print("-------------");
+           print("Sign:"+Math.sign(-99));
+           print("Sign:"+Math.sign(99));
+           print("Trunc:"+Math.trunc(123.456));
+           print("Max:"+Math.max([10,20,30,40,50]));
+           print("Min:"+Math.min([10,20,30,40,50]));
+           print("-------------");
+           print("Random:"+Math.random());
+           print("-------------");
+           var rnum=Math.trunc(Math.random()*10);
+           print(rnum);
+           var rnum=Math.trunc(Math.random()*100);
+           print(rnum);
+           var rnum=Math.trunc(Math.random()*1000);
+           print(rnum);
+
+           print("Done");
+        </script>
+    </body>
+
+</html>
