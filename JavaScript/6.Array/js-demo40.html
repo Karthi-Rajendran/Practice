@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS: Creating HTML elements with JS</title>
+      <style>
+          div{
+              margin:50px;
+              border:2px solid red;
+              border-radius: 10px;
+              width: 500px;
+              font-size: 25px;
+              background-color: goldenrod;
+              padding-left: 20px;
+            }
+            #mytable{
+                margin: 50px;
+                border: 2px solid red;
+                border-radius: 10px;
+                width: 30%;
+                padding: 20px;
+                line-height: 1.5;
+            }
+      </style>
+    </head>
+    <body>
+        <div id="my-data-div"></div>
+        <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>";
+            }
+            print("<u>Exploring - Array Object - 4</u>");
+           
+           function get(x){
+               return x;
+           }
+
+           function square(x){
+               return x*x;
+           }
+
+           function cube(x){
+               return x*x*x;
+           }
+
+           var numArray=[1,2,3,4,5];
+           print("Num Array:"+numArray);
+          
+           
+           var sameArray=numArray.map(get);
+           print("sameArray:"+sameArray);
+           
+
+           var squareArray=numArray.map(square);
+           print("SquareArray:"+squareArray);
+
+           var cubeArray=numArray.map(cube);
+           print("cubeArray:"+cubeArray);
+           print("-------------------------");
+
+           var sameArray=numArray.map(x=>x);
+           print("L sameArray:"+sameArray);
+           
+
+           var squareArray=numArray.map(x=>x*x);
+           print("L squareArray:"+squareArray);
+
+           var cubeArray=numArray.map(x=>x*x*x);
+           print("L cubeArray:"+cubeArray);
+           
+           print("-------------------------");
+
+           var ageArray=[10,30,15,25,17,16,39];
+           function validAgeForVote(age){
+               console.log(age)
+               if(age>=18)
+               return true;
+               else
+               return false;
+           }
+           print("ageArray:"+ageArray);
+
+           var resultArray=ageArray.map(validAgeForVote);
+           print("resultArray:"+resultArray);
+
+           var resultArray=ageArray.filter(validAgeForVote);
+           print("F resultArray:"+resultArray);
+
+           print("-------------------------");
+
+           var numArray=[1,2,3,4,5,6,7,8,9,10,11];
+           print("numAray:"+numArray);
+
+           function findEven(num){
+               if(num%2==0)
+               return true;
+               else
+               return false;
+           }
+
+           var evenArray=numArray.map(findEven);
+           print("evenArray:"+evenArray);
+
+           var evenArray=numArray.filter(findEven);
+           print("F evenArray:"+evenArray);
+
+           print("-------------------------");
+
+           function findOdd(num){
+            if(num%2!==0)
+               return true;
+               else
+               return false; 
+           }
+           var oddArray=numArray.map(findOdd);
+           print("oddArray:"+oddArray);
+
+           var oddArray=numArray.filter(findOdd);
+           print("F oddArray:"+oddArray);
+
+           print("-------------------------");
+           
+           var evenArray=numArray.filter(x=>x%2==0);
+           print("L evenArray:"+evenArray);
+
+           var oddArray=numArray.filter(x=>x%2!=0);
+           print("L oddArray:"+oddArray);
+
+           print("-------------------------");
+
+           var numArray=[1,2,3,4,5];
+           print(numArray);
+           var resArray=numArray.reduce((x,y)=>x+y,0);
+           print(resArray);
+           var resArray=numArray.reduce((x,y)=>x*y,1);
+           print(resArray);
+
+           print("-------------------------");
+
+           var resArray=numArray.reduceRight((x,y)=>x+y,0);
+           print(resArray);
+           var resArray=numArray.reduceRight((x,y)=>x*y,1);
+           print(resArray);
+
+           print("-------------------------");
+
+           var resArray=numArray.reduce((x,y)=>(x>y)?x:y,1);
+           print(resArray);
+           var resArray=numArray.reduce((x,y)=>(x<y)?x:y,1);
+           print(resArray);
+
+
+           print("Done");
+        </script>
+    </body>
+
+</html>

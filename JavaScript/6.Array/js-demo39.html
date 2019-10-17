@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>JS: Creating HTML elements with JS</title>
+      <style>
+          div{
+              margin:50px;
+              border:2px solid red;
+              border-radius: 10px;
+              width: 500px;
+              font-size: 25px;
+              background-color: goldenrod;
+              padding-left: 20px;
+            }
+            #mytable{
+                margin: 50px;
+                border: 2px solid red;
+                border-radius: 10px;
+                width: 30%;
+                padding: 20px;
+                line-height: 1.5;
+            }
+      </style>
+    </head>
+    <body>
+        <div id="my-data-div"></div>
+        <script>
+            function print(data){
+                var mydiv=document.getElementById("my-data-div");
+                mydiv.innerHTML=mydiv.innerHTML+data+"</br>";
+            }
+            print("<u>Exploring - Array Object - 3</u>");
+           
+           var myarr=["Angular","Node JS","MongoDB"];
+           var iterator=myarr.entries();
+
+           for(let x of iterator){
+               print(x);
+               console.log(x);
+           }
+           print("----------------");
+           var iterator=myarr.keys();
+           for(let key of iterator){
+               print(key);
+               console.log(key);
+           }   
+           print("----------------");
+           var iterator=myarr.values();
+           for(let value of iterator){
+               print(value);
+               console.log(value);
+           }
+           print("----------------");
+           arr=["Angular","NodeJS","ReactJS","ExpressJS"];
+           print(arr);
+           for(var index in arr){
+               print(index+"    "+arr[index]);
+           }          
+           print("----------------");
+           function showArray1(item,index){
+               print(index+"    "+item);
+           }
+           
+           function showArray2(item,index){
+               if(index%2==0)
+               print(index+"    "+item);
+           }
+           arr.forEach(showArray1);
+           print("----------------");
+           arr.forEach(showArray2);
+           print("----------------");
+           print("Done");
+        </script>
+    </body>
+
+</html>
